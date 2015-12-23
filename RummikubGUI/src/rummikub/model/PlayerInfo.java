@@ -15,11 +15,21 @@ public class PlayerInfo
 {
     private String name;
     private boolean isHumen;
+    private boolean placedFirstSequence;
 
-    public PlayerInfo(String name, boolean isHumen) 
+    public PlayerInfo(String name, boolean isHumen, boolean placedFirstSequence) 
     {
         this.name = name;
         this.isHumen = isHumen;
+        this.placedFirstSequence = placedFirstSequence;
+    }
+
+    public boolean isPlacedFirstSequence() {
+        return placedFirstSequence;
+    }
+
+    public void setPlacedFirstSequence(boolean placedFirstSequence) {
+        this.placedFirstSequence = placedFirstSequence;
     }
 
     public String getName() 

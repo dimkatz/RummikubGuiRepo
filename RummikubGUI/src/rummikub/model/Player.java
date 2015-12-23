@@ -20,6 +20,16 @@ public class Player {
     private final String m_name;
     
     private List<Tile> m_hand;
+    
+    boolean placedFirstSequence = true;
+
+    public void setPlacedFirstSequence(boolean placedFirstSequence) {
+        this.placedFirstSequence = placedFirstSequence;
+    }
+
+    public boolean isPlacedFirstSequence() {
+        return placedFirstSequence;
+    }
 
     public Player(PlayerType type, String name) {
         this.m_type = type;

@@ -50,6 +50,8 @@ public class GameBuilder {
             Player.PlayerType type = playerInfo.isHumen() ? Player.PlayerType.HUMAN : Player.PlayerType.COMPUTER;
             
             Player player = new Player(type, playerInfo.getName());
+            player.setPlacedFirstSequence(playerInfo.isPlacedFirstSequence());
+            
             playersList.add(player);
         }
 
@@ -89,7 +91,7 @@ public class GameBuilder {
     private static List<PlayerInfo> createPlayerInfo(generated.Players players) {
         List<PlayerInfo> playersInfo = new ArrayList<PlayerInfo>();
         for (generated.Players.Player player : players.getPlayer()) {
-            playersInfo.add(new PlayerInfo(player.getName(), player.getType() == generated.PlayerType.HUMAN));
+            playersInfo.add(new PlayerInfo(player.getName(), player.getType() == generated.PlayerType.HUMAN, player.isPlacedFirstSequence()));
         }
 
         return playersInfo;

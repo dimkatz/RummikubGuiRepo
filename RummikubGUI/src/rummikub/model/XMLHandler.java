@@ -61,6 +61,7 @@ public class XMLHandler {
         generated.PlayerType type = gamePlayer.getType() == Player.PlayerType.HUMAN
                 ? generated.PlayerType.HUMAN : generated.PlayerType.COMPUTER;
         player.setType(type);
+        player.setPlacedFirstSequence(gamePlayer.isPlacedFirstSequence());
 
         generated.Players.Player.Tiles tiles = createXMLPlayerTilesObj(gamePlayer.getTiles());
         player.setTiles(tiles);
