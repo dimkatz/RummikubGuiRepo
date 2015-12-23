@@ -22,7 +22,8 @@ import javafx.stage.Stage;
 public class RummikubGUI extends Application {
     
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) 
+    {
         ScreensController mainContainer = new ScreensController();
 
         Group root = new Group();

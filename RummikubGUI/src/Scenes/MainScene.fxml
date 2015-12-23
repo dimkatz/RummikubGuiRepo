@@ -6,6 +6,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scenes.MainSceneController">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Scenes.MainSceneController">
+   <children>
+      <VBox alignment="CENTER" layoutX="200.0" layoutY="33.0" prefHeight="350.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="buttonStartNewGame" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Start New Game" />
+            <Button fx:id="buttonLoadGame" mnemonicParsing="false" onAction="#buttonLoadGame_Action" prefHeight="25.0" prefWidth="122.0" text="Load Game" />
+            <Button fx:id="buttonPlayAnotherRound" mnemonicParsing="false" text="Play Another Round" />
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>

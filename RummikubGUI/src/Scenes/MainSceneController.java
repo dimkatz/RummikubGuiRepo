@@ -41,9 +41,20 @@ public class MainSceneController implements Initializable, ControlledScreen {
     private void buttonLoadGame_Action(ActionEvent event) 
     {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.show
+        
     }
     
+    @FXML
+    private void buttonStartNewGame_Action(ActionEvent event) 
+    {
+        FileChooser fileChooser = new FileChooser();
+        
+    }
     
-    
+    @FXML
+    private void buttonPlayAnotherRound_Action(ActionEvent event) 
+    {
+        FileChooser fileChooser = new FileChooser();
+        
+    }
 }
