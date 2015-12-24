@@ -63,15 +63,16 @@ import javafx.scene.layout.StackPane;
          }
      }   
           
-
-     public boolean unloadScreen(String name) {
-         if (screens.remove(name) == null) {
+     public boolean unloadScreen(String name) 
+     {
+         if (screens.remove(name) == null) 
+         {
              System.out.println("Screen didn't exist");
              return false;
-         } else {
+         } 
+         else 
+         {
              return true;
          }
    } 
-
-   
 }

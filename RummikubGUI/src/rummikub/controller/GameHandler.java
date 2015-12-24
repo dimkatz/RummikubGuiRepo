@@ -15,7 +15,7 @@ import rummikub.model.*;
  *
  * @author Guy
  */
-public class RummikubApp {
+public class GameHandler {
     
     private final static int MIN_PLAYER_NUM = 2;
     private final static int MAX_PLAYER_NUM = 4;
@@ -81,14 +81,14 @@ public class RummikubApp {
         
         for (int i = 0; i < numOfComputerPlayers; i++)
         {
-            playersInfo.add(new PlayerInfo("com" + Integer.toString(i+1), Boolean.FALSE));
+            playersInfo.add(new PlayerInfo("com" + Integer.toString(i+1), Boolean.FALSE, Boolean.FALSE));
         }
         
         for (int i = numOfComputerPlayers; i < numOfPlayers; i++) {
             while(true)
             {
                 String name = "TODO..." + i;
-                PlayerInfo playerToAdd = new PlayerInfo(name, Boolean.TRUE);
+                PlayerInfo playerToAdd = new PlayerInfo(name, Boolean.TRUE, Boolean.FALSE);
                 if (!playersInfo.contains(playerToAdd)) 
                 {
                     playersInfo.add(playerToAdd);

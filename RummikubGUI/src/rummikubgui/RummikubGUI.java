@@ -14,30 +14,34 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import rummikub.controller.GameHandler;
 
 /**
  *
  * @author DK
  */
 public class RummikubGUI extends Application {
-    
-    @Override
+
+    private GameHandler gameHandler = new GameHandler();
+    ScreensController mainContainer = new ScreensController();
+
     public void start(Stage primaryStage) 
     {
-        ScreensController mainContainer = new ScreensController();
-
         Group root = new Group();
         root.getChildren().addAll(mainContainer);
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
+    
+    private void addAllScenes()
+    {
+        
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         launch(args);
     }
-    
 }

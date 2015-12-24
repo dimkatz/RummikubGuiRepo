@@ -13,22 +13,25 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.stage.FileChooser;
+import rummikub.controller.GameHandler;
 
 /**
  * FXML Controller class
  *
  * @author DK
  */
-public class MainSceneController implements Initializable, ControlledScreen {
+public class MainMenuSceneController implements Initializable, ControlledScreen {
     
     private ScreensController myController; 
-
+    
+    private GameHandler gameHandler;
+    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        //TODO
     }    
 
     @Override
@@ -41,7 +44,6 @@ public class MainSceneController implements Initializable, ControlledScreen {
     private void buttonLoadGame_Action(ActionEvent event) 
     {
         FileChooser fileChooser = new FileChooser();
-        
     }
     
     @FXML
