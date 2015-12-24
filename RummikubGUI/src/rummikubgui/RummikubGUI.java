@@ -37,6 +37,7 @@ public class RummikubGUI extends Application {
     private void addAllScenes()
     {
         
+        
     }
     /**
      * @param args the command line arguments
