@@ -1,10 +1,6 @@
 package Scenes;
 
-import example.javafx.components.PlayerView;
-import example.engine.PlayersManager;
-import example.engine.exceptions.DuplicateNameException;
-import example.engine.exceptions.EmptyNameException;
-import example.engine.model.Player;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.animation.FadeTransition;
@@ -20,6 +16,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
+import rummikub.controller.PlayersManager;
+import rummikub.controller.exception.DuplicateNameException;
+import rummikub.controller.exception.EmptyNameException;
+import rummikub.model.Player;
 
 /**
  * FXML Controller class
@@ -48,7 +48,7 @@ public class PlayersController implements Initializable {
 
     private boolean isErrorMessageShown = false;
     private SimpleBooleanProperty finishedInit;
-
+    
     private PlayersManager playersManager;
 
     public void setPlayersManager(PlayersManager playersManager) {
@@ -74,8 +74,8 @@ public class PlayersController implements Initializable {
         String name = getPlayerName();
         boolean isHuman = isPlayerHuman();
         try {
-            Player player = playersManager.addPlayer(name, isHuman);
-            addPlayerToList(player);
+            //Player player = playersManager.addPlayer(name, isHuman);
+            //addPlayerToList(player);
             clearPlayerDetailsFields();
             hideError();
         } catch (DuplicateNameException | EmptyNameException playersManagerException) {
@@ -113,8 +113,8 @@ public class PlayersController implements Initializable {
     }
 
     private void addPlayerToList(Player player) {
-        PlayerView playerView = new PlayerView(player.getName(), player.isHuman());
-        playersPane.getChildren().add(playerView);
+        //PlayerView playerView = new PlayerView(player.getName(), player.isHuman());
+        //playersPane.getChildren().add(playerView);
     }
 
     private void clearPlayerDetailsFields() {
