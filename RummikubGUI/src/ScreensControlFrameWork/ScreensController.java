@@ -5,6 +5,7 @@
  */
 package ScreensControlFrameWork;
 
+import java.net.URL;
 import java.util.HashMap;
 import javafx.beans.property.DoubleProperty;
 import javafx.fxml.FXMLLoader;
@@ -28,7 +29,8 @@ import javafx.scene.layout.StackPane;
      
      public boolean loadScreen(String name, String resource) {
          try {
-             FXMLLoader myLoader = new FXMLLoader(getClass().getResource(resource));
+             URL url = getClass().getResource(resource);
+             FXMLLoader myLoader = new FXMLLoader (url);
              Parent loadScreen = (Parent) myLoader.load();
              ControlledScreen myScreenControler
                      = ((ControlledScreen) myLoader.getController());
@@ -45,7 +47,6 @@ import javafx.scene.layout.StackPane;
      public boolean setScreen(final String name) {
 
          if (screens.get(name) != null) { //screen loaded 
-             final DoubleProperty opacity = opacityProperty();
 
              //Is there is more than one screen 
              if (!getChildren().isEmpty()) {
@@ -80,5 +81,10 @@ import javafx.scene.layout.StackPane;
 
     private void addController(String name, ControlledScreen ScreenControler) {
         screensControllers.put(name, ScreenControler);
+    }
+    
+    public ControlledScreen getController(String name)
+    {
+        return screensControllers.get(name);
     }
 }
