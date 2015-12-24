@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Scenes.MainMenuSceneController">
+<AnchorPane id="AnchorPane" prefHeight="10000.0" prefWidth="10000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.MainMenuSceneController">
    <children>
-      <VBox alignment="CENTER" layoutX="200.0" layoutY="33.0" prefHeight="350.0" prefWidth="200.0">
-         <children>
-            <Button fx:id="buttonStartNewGame" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Start New Game" />
-            <Button fx:id="buttonLoadGame" mnemonicParsing="false" onAction="#buttonLoadGame_Action" prefHeight="25.0" prefWidth="122.0" text="Load Game" />
-            <Button fx:id="buttonPlayAnotherRound" mnemonicParsing="false" text="Play Another Round" />
-         </children>
-      </VBox>
+      <ChoiceBox layoutX="48.0" layoutY="144.0" prefWidth="150.0" />
+      <Button layoutX="91.0" layoutY="62.0" mnemonicParsing="false" text="Button" textFill="#971313" />
    </children>
 </AnchorPane>
