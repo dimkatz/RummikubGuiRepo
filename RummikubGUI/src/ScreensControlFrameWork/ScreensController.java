@@ -20,7 +20,8 @@ import javafx.scene.layout.StackPane;
  public class ScreensController extends StackPane {
      
      private HashMap<String, Node> screens = new HashMap<>();
-
+     private HashMap<String, ControlledScreen> screensControllers = new HashMap<>();
+     
      public void addScreen(String name, Node screen) {
          screens.put(name, screen);
      }
@@ -33,6 +34,7 @@ import javafx.scene.layout.StackPane;
                      = ((ControlledScreen) myLoader.getController());
              myScreenControler.setScreenParent(this);
              addScreen(name, loadScreen);
+             addController(name, myScreenControler);
              return true;
          } catch (Exception e) {
              System.out.println(e.getMessage());
@@ -75,4 +77,8 @@ import javafx.scene.layout.StackPane;
              return true;
          }
    } 
+
+    private void addController(String name, ControlledScreen ScreenControler) {
+        screensControllers.put(name, ScreenControler);
+    }
 }
