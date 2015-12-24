@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Scenes;
+package scenes;
 
 import ScreensControlFrameWork.ControlledScreen;
 import ScreensControlFrameWork.ScreensController;
@@ -37,7 +37,6 @@ public class MainMenuSceneController implements Initializable, ControlledScreen 
     @Override
     public void setScreenParent(ScreensController screenPage) {
         myController = screenPage;
-        
     }
     
     @FXML
