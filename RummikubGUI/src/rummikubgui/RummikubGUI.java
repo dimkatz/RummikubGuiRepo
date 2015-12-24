@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import rummikub.controller.GameHandler;
+import scenes.SceneIdentifier;
 
 /**
  *
@@ -23,21 +24,30 @@ import rummikub.controller.GameHandler;
 public class RummikubGUI extends Application {
 
     private GameHandler gameHandler = new GameHandler();
-    ScreensController mainContainer = new ScreensController();
+    private ScreensController mainContainer = new ScreensController();
 
     public void start(Stage primaryStage) 
     {
         Group root = new Group();
         root.getChildren().addAll(mainContainer);
+        addAllScreens();
+        mainContainer.setScreen(SceneIdentifier.MAIN_MENU_SCENE_NAME);
+        
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
     
-    private void addAllScenes()
+    private void addAllScreens()
     {
+        mainContainer.loadScreen(SceneIdentifier.GAME_PREFERENCES_SCENE_NAME, 
+                                 SceneIdentifier.GAME_PREFERENCES_SCENE_PATH);
         
+        mainContainer.loadScreen(SceneIdentifier.GAME_SCENE_NAME, 
+                                 SceneIdentifier.GAME_SCENE_PATH);
         
+        mainContainer.loadScreen(SceneIdentifier.MAIN_MENU_SCENE_NAME, 
+                                 SceneIdentifier.MAIN_MENU_SCENE_PATH);
     }
     /**
      * @param args the command line arguments
