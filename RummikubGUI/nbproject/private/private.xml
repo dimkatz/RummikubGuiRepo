@@ -9,16 +9,20 @@
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/scenes/GameScene.fxml</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/rummikub/model/Player.java</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/ScreensControlFrameWork/ScreensController.java</file>
+            <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/rummikub/model/Sequence.java</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/ScreensControlFrameWork/ControlledScreen.java</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/rummikub/model/PlayerInfo.java</file>
-            <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/scenes/GamePreferencesScene.java</file>
+            <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/scenes/PlayersScene.fxml</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/rummikub/model/Tile.java</file>
+            <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/rummikub/model/RummikubGame.java</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/rummikub/model/GameBuilder.java</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/scenes/PlayersController.java</file>
+            <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/rummikub/controller/PlayersManager.java</file>
+            <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/scenes/MainMenuScene.fxml</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/rummikubgui/RummikubGUI.java</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/scenes/GameSceneController.java</file>
-            <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/scenes/GamePreferencesScene.fxml</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/rummikub/controller/GameHandler.java</file>
+            <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/scenes/MainScene.fxml</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/rummikub/model/XMLHandler.java</file>
             <file>file:/C:/Users/Guy/Desktop/RummikubGuiRepo/RummikubGUI/src/scenes/SceneIdentifier.java</file>
         </group>

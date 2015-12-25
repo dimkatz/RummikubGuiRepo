@@ -36,7 +36,7 @@ public class RummikubGUI extends Application {
         primaryStage.setScene(scene);
         
         mainContainer.setScreen(SceneIdentifier.MAIN_MENU_SCENE_NAME);
-        //mainContainer.setScreen(SceneIdentifier.GAME_SCENE_NAME);
+        mainContainer.setScreen(SceneIdentifier.GAME_SCENE_NAME);
 
         primaryStage.show();
     }
