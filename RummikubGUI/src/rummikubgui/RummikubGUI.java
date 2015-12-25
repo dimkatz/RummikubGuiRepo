@@ -15,7 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import rummikub.controller.GameHandler;
-import scenes.SceneIdentifier;
+import ScreensControlFrameWork.scenes.SceneIdentifier;
 
 /**
  *
@@ -28,15 +28,15 @@ public class RummikubGUI extends Application {
 
     public void start(Stage primaryStage) 
     {
+        addAllScreens();
         Group root = new Group();
         root.getChildren().addAll(mainContainer);
-        addAllScreens();
         
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root,500,500);
         primaryStage.setScene(scene);
         
         mainContainer.setScreen(SceneIdentifier.MAIN_MENU_SCENE_NAME);
-        mainContainer.setScreen(SceneIdentifier.GAME_SCENE_NAME);
+        //mainContainer.setScreen(SceneIdentifier.GAME_SCENE_NAME);
 
         primaryStage.show();
     }

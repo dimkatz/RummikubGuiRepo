@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package scenes;
+package ScreensControlFrameWork.scenes;
 
 /**
  *
@@ -12,9 +12,9 @@ package scenes;
 public class SceneIdentifier 
 {
     public static final String GAME_SCENE_NAME = "GameSceneController";
-    public static final String GAME_SCENE_PATH = "/scenes/GameScene.fxml";
+    public static final String GAME_SCENE_PATH = "scenes/GameScene.fxml";
     
     public static final String MAIN_MENU_SCENE_NAME = "MainMenuSceneController";
-    public static final String MAIN_MENU_SCENE_PATH = "/scenes/MainMenuScene.fxml";
+    public static final String MAIN_MENU_SCENE_PATH = "scenes/MainMenuScene.fxml";
 
 }
